@@ -1,0 +1,18 @@
+features:
+  base:
+    - ByteCounts
+    - BinaryImage
+    - FileSize
+    - URLs
+    - ImportedFunctions
+    - ExportedFunctions
+    - Strings
+  pe:
+    - GeneralFileInfo
+    - MSDOSHeader
+    - PEHeader
+    - OptionalHeader
+    - Libraries
+    - Sections
+  elf:
+    - SomeELFFeature
