@@ -1,9 +1,9 @@
-# Malware Revealer
-Malware Revealer is a malware classification framework, designed primarily for malware detection, it contains a modular toolset for feature extraction, as well as pre-trained models and a ready to use web API for making predictions.
+# DeeplearningAntivirus
+DeeplearningAntivirus is a malware classification framework, designed primarily for malware detection, it contains a modular toolset for feature extraction, as well as pre-trained models and a ready to use web API for making predictions.
 
 
 # Use Cases
-You will most likely find Malware Revealer awesome in those cases :
+You will most likely find DeeplearningAntivirus awesome in those cases :
 
 - Extract features from executables and use the dataset for training models or to learn more about them. [Here are instructions to do so](#extractor-standalone)
 
