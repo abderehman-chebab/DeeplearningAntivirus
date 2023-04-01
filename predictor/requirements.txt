@@ -1,0 +1,11 @@
+flask
+numpy
+torch
+torchvision
+sklearn
+Pillow
+flask-restful
+flask-cors
+requests
+gunicorn
+pandas
