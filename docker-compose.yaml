@@ -1,0 +1,34 @@
+version: '3'
+
+services:
+  predictor:
+    image: malwarerevealer/predictor
+    build: ./predictor
+    restart: on-failure
+    networks:
+      - backend
+
+  extractor:
+    image: malwarerevealer/extractor-server
+    build: ./extractor/server
+    restart: on-failure
+    networks:
+      - backend
+
+  web-server:
+    image: nginx
+    ports:
+      - 80:80
+      - 443:443
+    volumes:
+      - ./config/nginx:/etc/nginx/conf.d
+      # if need to add https using certbot
+      # - ./data/certbot/conf:/etc/letsencrypt
+    networks:
+      - backend
+    depends_on:
+      - predictor
+      - extractor
+
+networks:
+  backend:
